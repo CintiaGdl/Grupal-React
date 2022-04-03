@@ -9,13 +9,14 @@ export default function NavBar() {
             <img src="./logo.jpg" alt="logo" />
             </div>
             <div className='login-container'>
-                    <div className='login-container__item login'> 
+                   {/*  <div className='login-container__item login'> 
                         <h3>INICIAR SESIÓN</h3>
-                    </div>
+                    </div> */}
                     {/* <div className='login-container__item register'>
                         <h3>REGISTRARSE</h3>
                     </div> */}
                     <NavLink to='/home'>Home</NavLink>
+                    <NavLink to='/login'>Login</NavLink>
                     <NavLink to='/register'>Register</NavLink>
             </div>
         </div>
