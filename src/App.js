@@ -1,14 +1,19 @@
 import './App.scss';
-import { Card } from './components/Card/Card';
-import { Text } from './components/Text/Text'
 import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter as Router, NavLink, Route, Routes } from 'react-router-dom';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
+import HomePage from './pages/HomePage/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Text/>
-      <Card/>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path='/register' element={<RegisterPage />} />
+          <Route path='/home' element={<HomePage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
