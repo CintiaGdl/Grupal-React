@@ -21,10 +21,10 @@ const Loginform = () => {
     return (
         <div className='pages'>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <label>Email</label>
-                <input type='text' name='email' {...register('email', {required: true, pattern: /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})} />
-                <label>Password</label>
-                <input type='password' name='password' {...register('password' , {required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/})} />
+                <label className='pages__element'>Email</label>
+                <input className='pages__element' type='text' name='email' {...register('email', {required: true, pattern: /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})} />
+                <label className='pages__element'>Password</label>
+                <input className='pages__element' type='password' name='password' {...register('password' , {required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/})} />
                 <button>Login</button>
             </form>
         </div>

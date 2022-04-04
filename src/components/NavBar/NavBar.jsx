@@ -15,9 +15,9 @@ export default function NavBar() {
                     {/* <div className='login-container__item register'>
                         <h3>REGISTRARSE</h3>
                     </div> */}
-                    <NavLink to='/home'>Home</NavLink>
-                    <NavLink to='/login'>Login</NavLink>
-                    <NavLink to='/register'>Register</NavLink>
+                    <NavLink to='/home' className='login-container__item login'>Home</NavLink>
+                    <NavLink to='/login' className='login-container__item login'>Login</NavLink>
+                    <NavLink to='/register' className='login-container__item register'>Register</NavLink>
             </div>
         </div>
     </nav>

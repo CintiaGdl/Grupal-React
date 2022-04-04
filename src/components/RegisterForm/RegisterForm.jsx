@@ -18,13 +18,13 @@ const Registerform = () => {
   return (
     <div className='pages'>
       <form onSubmit={handleSubmit(onSubmit)}>
-         <label>Name</label>
-         <input type="text" name="name" {...register('name', {required: true})}/>
-         <label>Email</label>
-         <input type="email" name="email" {...register('email', {required: true, pattern: /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})}/>
-         <label>Password</label>
-         <input type="password" name="password" {...register('password', {required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/})}/>
-         <button>Register</button>
+         <label className='pages__element'>Name</label>
+         <input className='pages__element' type="text" name="name" {...register('name', {required: true})}/>
+         <label className='pages__element'>Email</label>
+         <input className='pages__element' type="email" name="email" {...register('email', {required: true, pattern: /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})}/>
+         <label className='pages__element'>Password</label>
+         <input className='pages__element' type="password" name="password" {...register('password', {required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/})}/>
+         <button className='register-btn'>Register</button>
        </form>
     </div>
   );

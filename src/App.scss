@@ -1,6 +1,7 @@
 @import './components/Card/Card.scss';
 @import './components/NavBar/NavBar.scss';
 @import './components/Text/Text.scss';
+@import './components/loginForm/LoginForm.scss';
 
 @font-face {
     font-family: 'Beaufortitalic';
@@ -27,5 +28,5 @@ src: local('Beaufort'), url(../public/beaufortforlol-medium.otf) format('opentyp
     margin: 0px auto;
   }
   .pages {
-    margin-top: 80px;
+    margin-top: 200px;
   }
